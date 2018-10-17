@@ -42,6 +42,7 @@ extern void test_correcto_llamado_interno(void);
 extern void test_falla_llamado_externo_pisos(void);
 extern void test_falla_llamado_externo_sentido(void);
 extern void test_correcto_llamado_externo(void);
+extern void test_correcto_inicializacion_estructura_cabinas(void);
 
 
 /*=======Suite Setup=====*/
@@ -83,6 +84,7 @@ int main(void)
   RUN_TEST(test_falla_llamado_externo_pisos, 62);
   RUN_TEST(test_falla_llamado_externo_sentido, 69);
   RUN_TEST(test_correcto_llamado_externo, 76);
+  RUN_TEST(test_correcto_inicializacion_estructura_cabinas, 87);
 
   return suite_teardown(UnityEnd());
 }

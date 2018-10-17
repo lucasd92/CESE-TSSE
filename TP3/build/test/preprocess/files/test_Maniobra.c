@@ -210,3 +210,31 @@ void test_correcto_llamado_externo(void){
 
 
 }
+
+
+
+void test_correcto_inicializacion_estructura_cabinas(void){
+
+
+
+ inicializar_estructura_cabina(&cabinas[0]);
+
+ UnityAssertEqualNumber((UNITY_INT)((0xFF)), (UNITY_INT)((cabinas[0].piso)), (
+
+((void *)0)
+
+), (UNITY_UINT)(90), UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((UNITY_INT)((DETENIDA)), (UNITY_INT)((cabinas[0].sentido)), (
+
+((void *)0)
+
+), (UNITY_UINT)(91), UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((UNITY_INT)((CORRECTO)), (UNITY_INT)((cabinas[0].estado)), (
+
+((void *)0)
+
+), (UNITY_UINT)(92), UNITY_DISPLAY_STYLE_INT);
+
+}

@@ -55,3 +55,9 @@ int8_t cargar_llamado_externo(uint8_t piso, uint8_t sentido){
 	
 	return 0;
 }
+
+void inicializar_estructura_cabina(cabina_t *cabina){
+	cabina -> piso = 0xFF; 			// Un piso inválido indica que debe realizar maniobra de reconocimiento
+	cabina -> sentido = DETENIDA;	// Por defecto inicia detenida
+	cabina -> estado = CORRECTO;	// Debe inicial libre de fallas.
+}

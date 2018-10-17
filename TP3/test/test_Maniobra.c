@@ -83,3 +83,11 @@ void test_correcto_llamado_externo(void){
 	TEST_ASSERT_EQUAL((1 << 2),vector_llamados_externos_subida[1]);
 
 }
+
+void test_correcto_inicializacion_estructura_cabinas(void){
+	
+	inicializar_estructura_cabina(&cabinas[0]);
+	TEST_ASSERT_EQUAL(0xFF,cabinas[0].piso);
+	TEST_ASSERT_EQUAL(DETENIDA,cabinas[0].sentido);
+	TEST_ASSERT_EQUAL(CORRECTO,cabinas[0].estado);
+}
