@@ -36,12 +36,15 @@
 - :test: test_falla_carga_posicion_cabina_puntero
   :line: 109
   :message: ''
+- :test: test_correcto_carga_posicion_cabina
+  :line: 116
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 11
-  :passed: 11
+  :total: 12
+  :passed: 12
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.006746709999788436
+:time: 0.0007475950005755294

@@ -292,3 +292,31 @@ void test_falla_carga_posicion_cabina_puntero(void){
 
 
 }
+
+
+
+void test_correcto_carga_posicion_cabina(void){
+
+ inicializar_estructura_cabina(&cabinas[0]);
+
+
+
+ UnityAssertEqualNumber((UNITY_INT)((0)), (UNITY_INT)((cargar_posicion_cabina(2,BAJADA,&cabinas[0]))), (
+
+((void *)0)
+
+), (UNITY_UINT)(119), UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((UNITY_INT)((BAJADA)), (UNITY_INT)((cabinas[0].sentido)), (
+
+((void *)0)
+
+), (UNITY_UINT)(120), UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((UNITY_INT)((2)), (UNITY_INT)((cabinas[0].piso)), (
+
+((void *)0)
+
+), (UNITY_UINT)(121), UNITY_DISPLAY_STYLE_INT);
+
+}

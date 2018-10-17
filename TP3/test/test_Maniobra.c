@@ -112,3 +112,11 @@ void test_falla_carga_posicion_cabina_puntero(void){
 	TEST_ASSERT_EQUAL(-1,cargar_posicion_cabina(2,BAJADA,(void*) 0));
 
 }
+
+void test_correcto_carga_posicion_cabina(void){
+	inicializar_estructura_cabina(&cabinas[0]);
+	
+	TEST_ASSERT_EQUAL(0,cargar_posicion_cabina(2,BAJADA,&cabinas[0]));
+	TEST_ASSERT_EQUAL(BAJADA,cabinas[0].sentido);
+	TEST_ASSERT_EQUAL(2,cabinas[0].piso);
+}
