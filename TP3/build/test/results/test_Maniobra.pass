@@ -42,12 +42,15 @@
 - :test: test_correcto_leer_posicion_cabina
   :line: 124
   :message: ''
+- :test: test_correcto_leer_sentido_cabina
+  :line: 129
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 13
-  :passed: 13
+  :total: 14
+  :passed: 14
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.0008434330011368729
+:time: 0.0007371040010184515

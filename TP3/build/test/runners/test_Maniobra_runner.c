@@ -48,6 +48,7 @@ extern void test_falla_carga_posicion_cabina_sentido(void);
 extern void test_falla_carga_posicion_cabina_puntero(void);
 extern void test_correcto_carga_posicion_cabina(void);
 extern void test_correcto_leer_posicion_cabina(void);
+extern void test_correcto_leer_sentido_cabina(void);
 
 
 /*=======Suite Setup=====*/
@@ -95,6 +96,7 @@ int main(void)
   RUN_TEST(test_falla_carga_posicion_cabina_puntero, 109);
   RUN_TEST(test_correcto_carga_posicion_cabina, 116);
   RUN_TEST(test_correcto_leer_posicion_cabina, 124);
+  RUN_TEST(test_correcto_leer_sentido_cabina, 129);
 
   return suite_teardown(UnityEnd());
 }
