@@ -238,3 +238,21 @@ void test_correcto_inicializacion_estructura_cabinas(void){
 ), (UNITY_UINT)(92), UNITY_DISPLAY_STYLE_INT);
 
 }
+
+
+
+void test_falla_carga_posicion_cabina_pisos(void){
+
+ inicializar_estructura_cabina(&cabinas[0]);
+
+
+
+ UnityAssertEqualNumber((UNITY_INT)((-1)), (UNITY_INT)((cargar_posicion_cabina(128,BAJADA,&cabinas[0]))), (
+
+((void *)0)
+
+), (UNITY_UINT)(98), UNITY_DISPLAY_STYLE_INT);
+
+
+
+}

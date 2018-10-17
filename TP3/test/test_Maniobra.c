@@ -91,3 +91,11 @@ void test_correcto_inicializacion_estructura_cabinas(void){
 	TEST_ASSERT_EQUAL(DETENIDA,cabinas[0].sentido);
 	TEST_ASSERT_EQUAL(CORRECTO,cabinas[0].estado);
 }
+
+void test_falla_carga_posicion_cabina_pisos(void){
+	inicializar_estructura_cabina(&cabinas[0]);
+	
+	TEST_ASSERT_EQUAL(-1,cargar_posicion_cabina(128,BAJADA,&cabinas[0]));
+
+}
+

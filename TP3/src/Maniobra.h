@@ -39,3 +39,12 @@ int8_t cargar_llamado_externo(uint8_t piso, uint8_t sentido);
 
 //Función que da valores iniciales a la estrictura de las cabinas.
 void inicializar_estructura_cabina(cabina_t *cabina);
+
+// Función para cargar posición de la cabina
+// Argumentos: 	piso: planta en que se encuentra la cabina
+//		sentido: sentido de circulación de la cabina.
+//		cabina: estructura de la cabina
+// Retorna: -1 si piso 	 > MAX_NUM_PISOS
+// 	    -1 si sentido != BAJADA, SUBIDA o DETENIDA
+//	     0 si se cargó correctamente
+int8_t cargar_posicion_cabina(uint8_t piso,uint8_t sentido,cabina_t *cabina);

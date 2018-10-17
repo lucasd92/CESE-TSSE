@@ -27,12 +27,15 @@
 - :test: test_correcto_inicializacion_estructura_cabinas
   :line: 87
   :message: ''
+- :test: test_falla_carga_posicion_cabina_pisos
+  :line: 95
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 8
-  :passed: 8
+  :total: 9
+  :passed: 9
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.0007280200006789528
+:time: 0.000811154999610153

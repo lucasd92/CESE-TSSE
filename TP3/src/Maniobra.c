@@ -61,3 +61,22 @@ void inicializar_estructura_cabina(cabina_t *cabina){
 	cabina -> sentido = DETENIDA;	// Por defecto inicia detenida
 	cabina -> estado = CORRECTO;	// Debe inicial libre de fallas.
 }
+
+int8_t cargar_posicion_cabina(uint8_t piso,uint8_t sentido,cabina_t *cabina){
+	
+	if(piso >= MAX_NUM_PISOS){
+		return -1;
+	}
+	if( cabina == 0 ){
+		return -1;
+	}
+	if((sentido != SUBIDA) && (sentido != BAJADA) && (sentido != DETENIDA)){
+		return -1;
+	}
+	
+	cabina -> piso = piso;
+	
+	cabina -> sentido = sentido;
+	
+	return 0;
+}
