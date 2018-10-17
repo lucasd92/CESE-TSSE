@@ -96,3 +96,21 @@ void test_falla_llamado_interno_pisos(void){
 
 
 }
+
+
+
+void test_falla_llamado_interno_cabinas(void){
+
+
+
+
+
+ UnityAssertEqualNumber((UNITY_INT)((-1)), (UNITY_INT)((cargar_llamado_interno(5, 9))), (
+
+((void *)0)
+
+), (UNITY_UINT)(47), UNITY_DISPLAY_STYLE_INT);
+
+
+
+}

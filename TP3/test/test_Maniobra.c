@@ -40,3 +40,10 @@ void test_falla_llamado_interno_pisos(void){
 	TEST_ASSERT_EQUAL(-1,cargar_llamado_interno(130, 1));
 
 }
+
+void test_falla_llamado_interno_cabinas(void){
+
+	//Compruebo que falle si piso > MAX_NUM_CABINAS
+	TEST_ASSERT_EQUAL(-1,cargar_llamado_interno(5, 9));
+
+}
