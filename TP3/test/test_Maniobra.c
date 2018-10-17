@@ -72,3 +72,14 @@ void test_falla_llamado_externo_sentido(void){
 	TEST_ASSERT_EQUAL(-1,cargar_llamado_externo(10, 5));
 
 }
+
+void test_correcto_llamado_externo(void){
+	
+	inicializar_vectores();
+	
+	//Compruebo que devuelva 0 si los argumentos son correctos
+	TEST_ASSERT_EQUAL(0,cargar_llamado_externo(10, SUBIDA));
+	//Compruebo que se haya cargado correctamente el llamado.
+	TEST_ASSERT_EQUAL((1 << 2),vector_llamados_externos_subida[1]);
+
+}

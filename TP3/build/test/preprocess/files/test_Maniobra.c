@@ -180,3 +180,33 @@ void test_falla_llamado_externo_sentido(void){
 
 
 }
+
+
+
+void test_correcto_llamado_externo(void){
+
+
+
+ inicializar_vectores();
+
+
+
+
+
+ UnityAssertEqualNumber((UNITY_INT)((0)), (UNITY_INT)((cargar_llamado_externo(10, SUBIDA))), (
+
+((void *)0)
+
+), (UNITY_UINT)(81), UNITY_DISPLAY_STYLE_INT);
+
+
+
+ UnityAssertEqualNumber((UNITY_INT)(((1 << 2))), (UNITY_INT)((vector_llamados_externos_subida[1])), (
+
+((void *)0)
+
+), (UNITY_UINT)(83), UNITY_DISPLAY_STYLE_INT);
+
+
+
+}
