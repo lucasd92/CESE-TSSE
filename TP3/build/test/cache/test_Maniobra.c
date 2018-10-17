@@ -114,3 +114,33 @@ void test_falla_llamado_interno_cabinas(void){
 
 
 }
+
+
+
+void test_correcto_llamado_interno(void){
+
+
+
+ inicializar_vectores();
+
+
+
+
+
+ UnityAssertEqualNumber((UNITY_INT)((0)), (UNITY_INT)((cargar_llamado_interno(5, 1))), (
+
+((void *)0)
+
+), (UNITY_UINT)(56), UNITY_DISPLAY_STYLE_INT);
+
+
+
+ UnityAssertEqualNumber((UNITY_INT)(((1 << 5))), (UNITY_INT)((vector_llamados_cabinas[1][0])), (
+
+((void *)0)
+
+), (UNITY_UINT)(58), UNITY_DISPLAY_STYLE_INT);
+
+
+
+}

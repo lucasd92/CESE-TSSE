@@ -12,12 +12,15 @@
 - :test: test_falla_llamado_interno_cabinas
   :line: 44
   :message: ''
+- :test: test_correcto_llamado_interno
+  :line: 51
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 3
-  :passed: 3
+  :total: 4
+  :passed: 4
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.0007396960008918541
+:time: 0.0007798529986757785

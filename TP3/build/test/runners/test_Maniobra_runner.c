@@ -38,6 +38,7 @@ extern void tearDown(void);
 extern void test_inicializacion_vectores(void);
 extern void test_falla_llamado_interno_pisos(void);
 extern void test_falla_llamado_interno_cabinas(void);
+extern void test_correcto_llamado_interno(void);
 
 
 /*=======Suite Setup=====*/
@@ -75,6 +76,7 @@ int main(void)
   RUN_TEST(test_inicializacion_vectores, 20);
   RUN_TEST(test_falla_llamado_interno_pisos, 37);
   RUN_TEST(test_falla_llamado_interno_cabinas, 44);
+  RUN_TEST(test_correcto_llamado_interno, 51);
 
   return suite_teardown(UnityEnd());
 }

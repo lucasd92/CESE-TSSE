@@ -47,3 +47,14 @@ void test_falla_llamado_interno_cabinas(void){
 	TEST_ASSERT_EQUAL(-1,cargar_llamado_interno(5, 9));
 
 }
+
+void test_correcto_llamado_interno(void){
+	
+	inicializar_vectores();
+	
+	//Compruebo que devuelva 0 si los argumentos son correctos
+	TEST_ASSERT_EQUAL(0,cargar_llamado_interno(5, 1));
+	//Compruebo que se haya cargado correctamente el llamado.
+	TEST_ASSERT_EQUAL((1 << 5),vector_llamados_cabinas[1][0]);
+
+}
