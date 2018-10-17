@@ -1,0 +1,17 @@
+---
+:source:
+  :path: test
+  :file: test_Maniobra.c
+:successes:
+- :test: test_inicializacion_vectores
+  :line: 20
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 1
+  :passed: 1
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.0009746719988470431
