@@ -162,3 +162,21 @@ void test_falla_llamado_externo_pisos(void){
 
 
 }
+
+
+
+void test_falla_llamado_externo_sentido(void){
+
+
+
+
+
+ UnityAssertEqualNumber((UNITY_INT)((-1)), (UNITY_INT)((cargar_llamado_externo(10, 5))), (
+
+((void *)0)
+
+), (UNITY_UINT)(72), UNITY_DISPLAY_STYLE_INT);
+
+
+
+}

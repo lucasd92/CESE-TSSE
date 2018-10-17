@@ -65,3 +65,10 @@ void test_falla_llamado_externo_pisos(void){
 	TEST_ASSERT_EQUAL(-1,cargar_llamado_externo(130, 1));
 
 }
+
+void test_falla_llamado_externo_sentido(void){
+
+	//Compruebo que falle si piso > MAX_NUM_PISOS
+	TEST_ASSERT_EQUAL(-1,cargar_llamado_externo(10, 5));
+
+}
