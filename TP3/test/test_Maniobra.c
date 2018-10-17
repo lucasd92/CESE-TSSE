@@ -106,3 +106,9 @@ void test_falla_carga_posicion_cabina_sentido(void){
 
 }
 
+void test_falla_carga_posicion_cabina_puntero(void){
+	inicializar_estructura_cabina(&cabinas[0]);
+	
+	TEST_ASSERT_EQUAL(-1,cargar_posicion_cabina(2,BAJADA,(void*) 0));
+
+}

@@ -45,6 +45,7 @@ extern void test_correcto_llamado_externo(void);
 extern void test_correcto_inicializacion_estructura_cabinas(void);
 extern void test_falla_carga_posicion_cabina_pisos(void);
 extern void test_falla_carga_posicion_cabina_sentido(void);
+extern void test_falla_carga_posicion_cabina_puntero(void);
 
 
 /*=======Suite Setup=====*/
@@ -89,6 +90,7 @@ int main(void)
   RUN_TEST(test_correcto_inicializacion_estructura_cabinas, 87);
   RUN_TEST(test_falla_carga_posicion_cabina_pisos, 95);
   RUN_TEST(test_falla_carga_posicion_cabina_sentido, 102);
+  RUN_TEST(test_falla_carga_posicion_cabina_puntero, 109);
 
   return suite_teardown(UnityEnd());
 }
