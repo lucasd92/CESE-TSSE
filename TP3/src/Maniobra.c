@@ -18,3 +18,20 @@ void inicializar_vectores(void){
 }
 
 
+int8_t cargar_llamado_interno(uint8_t piso, uint8_t cabina){
+	uint8_t cociente;
+	uint8_t resto;
+	
+	if(piso >= MAX_NUM_PISOS){
+		return -1;
+	}
+	if(cabina >= MAX_NUM_CABINAS){
+		return -1;
+	}
+	cociente = piso / 8;
+	resto = piso % 8;
+	//pongo en 1 la ubicación correspondiente
+	vector_llamados_cabinas[cabina][cociente] |= 1 << resto;
+	
+	return 0;
+}

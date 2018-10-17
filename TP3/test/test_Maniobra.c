@@ -33,3 +33,10 @@ void test_inicializacion_vectores(void){
 		TEST_ASSERT_EQUAL(CERO, 0xFF & vector_llamados_externos_bajada[j]);
 	}
 }
+
+void test_falla_llamado_interno_pisos(void){
+
+	//Compruebo que falle si piso > MAX_NUM_PISOS
+	TEST_ASSERT_EQUAL(-1,cargar_llamado_interno(130, 1));
+
+}

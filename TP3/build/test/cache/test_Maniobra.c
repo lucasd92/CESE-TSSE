@@ -78,3 +78,21 @@ void test_inicializacion_vectores(void){
  }
 
 }
+
+
+
+void test_falla_llamado_interno_pisos(void){
+
+
+
+
+
+ UnityAssertEqualNumber((UNITY_INT)((-1)), (UNITY_INT)((cargar_llamado_interno(130, 1))), (
+
+((void *)0)
+
+), (UNITY_UINT)(40), UNITY_DISPLAY_STYLE_INT);
+
+
+
+}

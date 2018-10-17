@@ -36,6 +36,7 @@ char* GlobalOrderError;
 extern void setUp(void);
 extern void tearDown(void);
 extern void test_inicializacion_vectores(void);
+extern void test_falla_llamado_interno_pisos(void);
 
 
 /*=======Suite Setup=====*/
@@ -71,6 +72,7 @@ int main(void)
   suite_setup();
   UnityBegin("test_Maniobra.c");
   RUN_TEST(test_inicializacion_vectores, 20);
+  RUN_TEST(test_falla_llamado_interno_pisos, 37);
 
   return suite_teardown(UnityEnd());
 }

@@ -6,12 +6,15 @@
 - :test: test_inicializacion_vectores
   :line: 20
   :message: ''
+- :test: test_falla_llamado_interno_pisos
+  :line: 37
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 1
-  :passed: 1
+  :total: 2
+  :passed: 2
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.0009746719988470431
+:time: 0.003205977000106941
