@@ -88,3 +88,7 @@ int8_t leer_piso_cabina(cabina_t *cabina){
 int8_t leer_sentido_cabina(cabina_t *cabina){
 	return cabina -> sentido;
 }
+
+int8_t leer_estado_cabina(cabina_t *cabina){
+	return cabina -> estado;
+}

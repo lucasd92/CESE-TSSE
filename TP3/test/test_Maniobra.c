@@ -130,3 +130,11 @@ void test_correcto_leer_sentido_cabina(void){
 	cargar_posicion_cabina(2,BAJADA,&cabinas[0]);
 	TEST_ASSERT_EQUAL(BAJADA,leer_sentido_cabina(&cabinas[0]));
 }
+
+void test_correcto_leer_estado_cabina(void){
+	inicializar_estructura_cabina(&cabinas[0]);
+	TEST_ASSERT_EQUAL(CORRECTO,leer_estado_cabina(&cabinas[0]));
+	
+	cabinas[0].estado = FALLA;
+	TEST_ASSERT_EQUAL(FALLA,leer_estado_cabina(&cabinas[0]));
+}

@@ -348,3 +348,27 @@ void test_correcto_leer_sentido_cabina(void){
 ), (UNITY_UINT)(131), UNITY_DISPLAY_STYLE_INT);
 
 }
+
+
+
+void test_correcto_leer_estado_cabina(void){
+
+ inicializar_estructura_cabina(&cabinas[0]);
+
+ UnityAssertEqualNumber((UNITY_INT)((CORRECTO)), (UNITY_INT)((leer_estado_cabina(&cabinas[0]))), (
+
+((void *)0)
+
+), (UNITY_UINT)(136), UNITY_DISPLAY_STYLE_INT);
+
+
+
+ cabinas[0].estado = FALLA;
+
+ UnityAssertEqualNumber((UNITY_INT)((FALLA)), (UNITY_INT)((leer_estado_cabina(&cabinas[0]))), (
+
+((void *)0)
+
+), (UNITY_UINT)(139), UNITY_DISPLAY_STYLE_INT);
+
+}
