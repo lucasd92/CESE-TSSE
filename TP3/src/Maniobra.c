@@ -80,3 +80,7 @@ int8_t cargar_posicion_cabina(uint8_t piso,uint8_t sentido,cabina_t *cabina){
 	
 	return 0;
 }
+
+int8_t leer_piso_cabina(cabina_t *cabina){
+	return cabina -> piso;
+}

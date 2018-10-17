@@ -120,3 +120,8 @@ void test_correcto_carga_posicion_cabina(void){
 	TEST_ASSERT_EQUAL(BAJADA,cabinas[0].sentido);
 	TEST_ASSERT_EQUAL(2,cabinas[0].piso);
 }
+
+void test_correcto_leer_posicion_cabina(void){
+	cargar_posicion_cabina(2,BAJADA,&cabinas[0]);
+	TEST_ASSERT_EQUAL(2,leer_piso_cabina(&cabinas[0]));
+}

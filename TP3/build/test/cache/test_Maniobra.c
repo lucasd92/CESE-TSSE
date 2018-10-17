@@ -320,3 +320,17 @@ void test_correcto_carga_posicion_cabina(void){
 ), (UNITY_UINT)(121), UNITY_DISPLAY_STYLE_INT);
 
 }
+
+
+
+void test_correcto_leer_posicion_cabina(void){
+
+ cargar_posicion_cabina(2,BAJADA,&cabinas[0]);
+
+ UnityAssertEqualNumber((UNITY_INT)((2)), (UNITY_INT)((leer_piso_cabina(&cabinas[0]))), (
+
+((void *)0)
+
+), (UNITY_UINT)(126), UNITY_DISPLAY_STYLE_INT);
+
+}

@@ -48,3 +48,6 @@ void inicializar_estructura_cabina(cabina_t *cabina);
 // 	    -1 si sentido != BAJADA, SUBIDA o DETENIDA
 //	     0 si se cargó correctamente
 int8_t cargar_posicion_cabina(uint8_t piso,uint8_t sentido,cabina_t *cabina);
+
+// Función para obtener posición de la cabina
+int8_t leer_piso_cabina(cabina_t *cabina);
