@@ -58,3 +58,10 @@ void test_correcto_llamado_interno(void){
 	TEST_ASSERT_EQUAL((1 << 5),vector_llamados_cabinas[1][0]);
 
 }
+
+void test_falla_llamado_externo_pisos(void){
+
+	//Compruebo que falle si piso > MAX_NUM_PISOS
+	TEST_ASSERT_EQUAL(-1,cargar_llamado_externo(130, 1));
+
+}

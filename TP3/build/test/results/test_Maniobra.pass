@@ -15,12 +15,15 @@
 - :test: test_correcto_llamado_interno
   :line: 51
   :message: ''
+- :test: test_falla_llamado_externo_pisos
+  :line: 62
+  :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 4
-  :passed: 4
+  :total: 5
+  :passed: 5
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.0007798529986757785
+:time: 0.0007341500004258705

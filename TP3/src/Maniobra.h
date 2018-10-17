@@ -19,3 +19,9 @@ void inicializar_vectores(void);
 // 	    -1 si cabina > MAX_NUM_CABINAS
 //	     0 si se cargó correctamente	
 int8_t cargar_llamado_interno(uint8_t piso, uint8_t cabina);
+
+// Función para cargar un nuevo llamado desde los palieres
+// Retorna: -1 si piso 	 > MAX_NUM_PISOS
+// 	    -1 si sentido != BAJADA o SUBIDA
+//	     0 si se cargó correctamente
+int8_t cargar_llamado_externo(uint8_t piso, uint8_t sentido);

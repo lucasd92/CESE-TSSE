@@ -35,3 +35,23 @@ int8_t cargar_llamado_interno(uint8_t piso, uint8_t cabina){
 	
 	return 0;
 }
+
+int8_t cargar_llamado_externo(uint8_t piso, uint8_t sentido){
+	uint8_t cociente;
+	uint8_t resto;
+	
+	if(piso >= MAX_NUM_PISOS){
+		return -1;
+	}
+	if((sentido != SUBIDA) && (sentido != BAJADA) ){
+		return -1;
+	}
+	cociente = piso / 8;
+	resto = piso % 8;
+	if(sentido == BAJADA)
+		vector_llamados_externos_bajada[cociente] |= 1 << resto;
+	else
+		vector_llamados_externos_subida[cociente] |= 1 << resto;
+	
+	return 0;
+}

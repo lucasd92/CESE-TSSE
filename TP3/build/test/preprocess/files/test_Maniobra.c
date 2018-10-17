@@ -144,3 +144,21 @@ void test_correcto_llamado_interno(void){
 
 
 }
+
+
+
+void test_falla_llamado_externo_pisos(void){
+
+
+
+
+
+ UnityAssertEqualNumber((UNITY_INT)((-1)), (UNITY_INT)((cargar_llamado_externo(130, 1))), (
+
+((void *)0)
+
+), (UNITY_UINT)(65), UNITY_DISPLAY_STYLE_INT);
+
+
+
+}
